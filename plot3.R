@@ -18,7 +18,7 @@ DF$TimeStamp <- as.POSIXlt(DF$TimeStamp)
 ## PLOT DEFINE  ---------------------------------------------------------------
 
 
-#png(filename = plot_file_out
+png(filename = plot_file_out
     , width = 480
     , height = 480
     , units = "px")
@@ -32,4 +32,4 @@ lines(DF$TimeStamp, DF$Sub_metering_2, col="red")
 lines(DF$TimeStamp, DF$Sub_metering_3, col="blue")
 legend("topright", lwd = c(1,1,1), col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
-#dev.off() 
+dev.off() 
