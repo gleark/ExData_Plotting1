@@ -6,7 +6,7 @@ rm(list=ls())
 
 ## GLOBALS
 file2load <- "eda_project1_data.csv"
-plot_file_out <- "plot1.png"
+plot_file_out <- "plot2.png"
 
 ## GET DATA -------------------------------------------------------------------
 DF <- read.csv(file = file2load, header = TRUE)
@@ -23,9 +23,10 @@ png(filename = plot_file_out
     , height = 480
     , units = "px")
 
-hist(DF$Global_active_power
-     , main = "Global Active Power"
-     , xlab = "Global Active Power (kilowatts)"
-     , col = "red")
+plot(DF$TimeStamp, DF$Global_active_power
+     , type = "line"
+     , xlab =""
+     , ylab ="Global Active Power (kilowatts)")
+
 
 dev.off() 
