@@ -50,9 +50,8 @@ A tidy dataset was created from the raw UCI dataset by using the R-script get_da
 
 * reads in raw datafile
 * convert Date, Time fields into TimeStamp with POSIXlt format
-* filters dataset to contain records that:
-** fall between [2007-02-01,2007-02-02]
-** are complete records, i.e. contain no NAs
+* filters dataset to contain records that are between  2007-02-01 and 2007-02-02
+* are complete cases, i.e. contain no NAs
 
 This dataset is saved into a CSV format that is then loaded for use in each plotting script
 
@@ -64,3 +63,5 @@ The stored variables are the same as the raw dataset except for:
 
 Each script plot creates a single 480x480 pixel PNG file as output
 
+Tidy dataset used for plotting was:
+<a href="https://github.com/gleark/ExData_Plotting1/blob/master/eda_project1_data.csv">eda_project1_data.csv</a>
